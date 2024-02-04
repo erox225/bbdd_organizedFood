@@ -69,7 +69,7 @@ CREATE TABLE IF NOT EXISTS storage(
     FOREIGN KEY (id_receta) REFERENCES Recipe(id),
     FOREIGN KEY (id_hogar) REFERENCES Home(id),
 	FOREIGN KEY (id_producto) REFERENCES Product(id),
-	FOREIGN KEY (id_estado_producto) REFERENCES product_status(id)
+	FOREIGN KEY (id_estado_producto) REFERENCES Product_Status(id)
 )CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
 -- Crear la tabla purchase si no existe 
